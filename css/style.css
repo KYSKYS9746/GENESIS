@@ -1,0 +1,123 @@
+.Header .inner{
+    display: flex;
+    padding: 0 120px;
+    background: black;
+    line-height: 80px;
+}
+
+
+.Gnb>ul {
+    display: flex;
+    gap: 30px;
+    color: #f9f9f9;
+}
+
+.Header .inner .Utills {
+    font-size: 24px;   
+    margin: 0 0 0 auto;
+}
+
+.Header .inner li {
+    display: none;
+}
+
+.MainVisual .VisualSlide .itm {
+    position: relative;
+    height: 700px;
+}
+
+.MainVisual .VisualSlide .itm::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.3;
+}
+
+.MainVisual .VisualSlide .itm01 {
+    background: url(../images/MainViusal01.jpg) no-repeat center center/cover;
+}
+.MainVisual .VisualSlide .itm02 {
+    background: url(../images/MainViusal02.jpg) no-repeat center center/cover;
+}
+.MainVisual .VisualSlide .itm03 {
+    background: url(../images/MainViusal03.jpg) no-repeat center center/cover;
+}
+.MainVisual .VisualSlide .itm04 {
+    background: url(../images/MainViusal04.jpg) no-repeat center center/cover;
+}
+.MainVisual .VisualSlide .itm05 {
+    background: url(../images/MainViusal05.jpg) no-repeat center center/cover;
+}
+.MainVisual .VisualSlide .itm06 {
+    background: url(../images/MainViusal06.jpg) no-repeat center center/cover;
+}
+.MainVisual .VisualSlide .itm07 {
+    background: url(../images/MainViusal07.jpg) no-repeat center center/cover;
+}
+
+.MainVisual .VisualSlide .Slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    width: 100%;
+}
+
+.MainVisual .VisualSlide .Slogan strong {
+    display: block;
+    margin: 0 0 24px 0;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 0 0 1px #000;
+    color: #fff;
+}
+
+.MainVisual .VisualSlide .Slogan p {
+    font-size: 18px;
+    text-shadow: 0 0 1px #000;
+    color: #fff;
+    line-height: 22px;
+}
+
+.MainVisual .VisualSlide .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform:translate(-50%, 0);
+    max-width: 1200px;
+    width: 100%;
+}
+
+.MainVisual .VisualSlide .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 4px;
+    background: #fff;
+    margin: 0 10px 0 0;
+    border-radius: 2px;
+}
+
+.MainVisual .VisualSlide .slick-dots li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: #f00;
+}
+
+.MainVisual .VisualSlide .slick-dots li.slick-active::after {
+    width: 100%;
+    transition: 3s;
+}
+
+.MainVisual .VisualSlide .slick-dots li button {
+    display: none;
+}
