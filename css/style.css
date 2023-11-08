@@ -1,29 +1,100 @@
+
 .Header .inner{
     display: flex;
     padding: 0 120px;
-    background: black;
+    background:rgb(12, 12, 12);
     line-height: 80px;
 }
+.title {
+    max-width: 1200px;
+    margin: 0 auto 32px auto;
+    padding: 0 15px;
+    color: #ddd;
+}
 
+.title h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+}
 
-.Gnb>ul {
+.title p {
+    font-size: 16px;
+}
+
+/* .slick-slide, .slick-track {
+    transition-delay: 30ms;
+} */
+.Header .Gnb { 
+    margin: 0 0 0 36px;
+    white-space: nowrap;
+}
+
+.Header .Gnb>ul {
     display: flex;
     gap: 30px;
     color: #f9f9f9;
 }
 
+.Header .Gnb>ul>li {
+    position: relative;
+}
+
+.Header .Gnb>ul>li .Sub {
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    z-index: 1;
+
+    transition: 0.5s;
+    height: 0;
+    overflow: hidden;
+
+    line-height: 40px;
+
+    transform: translate(-50%, 0);
+}
+
+.Header .Gnb:hover>ul>li .Sub {
+    height: 200px;
+}
+
+.Header .Gnb>ul>li a {
+    display: block;
+}
+
+.Header .Gnb>ul>li .Sub a {
+    padding: 0 24px;
+}
+
+.Header .Gnb::before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: black;
+    z-index: 1;
+
+    transition: 0.5s;
+    height: 0;
+}
+
+.Header .Gnb:hover::before {
+    height: 200px;
+}
+
+
 .Header .inner .Utills {
     font-size: 24px;   
     margin: 0 0 0 auto;
-}
-
-.Header .inner li {
-    display: none;
+    color: #ddd;
 }
 
 .MainVisual .VisualSlide .itm {
     position: relative;
-    height: 700px;
+    height: 888px;
 }
 
 .MainVisual .VisualSlide .itm::before {
@@ -96,11 +167,14 @@
 .MainVisual .VisualSlide .slick-dots li {
     position: relative;
     display: inline-block;
-    width: 100px;
-    height: 4px;
-    background: #fff;
+    width: 10px;
+    height: 10px;
+    background: #333;
     margin: 0 10px 0 0;
-    border-radius: 2px;
+    border-radius: 50%;
+    
+
+    overflow: hidden;
 }
 
 .MainVisual .VisualSlide .slick-dots li::after {
@@ -110,7 +184,7 @@
     left: 0;
     bottom: 0;
     width: 0;
-    background: #f00;
+    background: white;
 }
 
 .MainVisual .VisualSlide .slick-dots li.slick-active::after {
@@ -121,3 +195,211 @@
 .MainVisual .VisualSlide .slick-dots li button {
     display: none;
 }
+
+.MainProduct {
+    position: relative;
+    padding: 120px 0;
+    background:rgb(12, 12, 12);
+
+}
+
+.MainProduct .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.MainProduct .inner strong {
+    display:inline-block;
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    color: #fff;
+
+}
+.MainProduct .inner span {
+    margin: 0 0 12px 0;
+    font-size: 12px;
+    color: #fff;
+
+}
+
+
+.MainProduct .Main_Product_Slide {
+    margin: 0 -15px;
+}
+
+/* .MainProduct .inner figure {
+    border: 3px solid #333;
+    gap: 30px;
+} */
+
+.MainProduct figure {
+    padding: 0 15px;
+}
+
+.MainProduct .Main_Product_Slide .slick-dots {
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+
+.MainProduct .Main_Product_Slide .slick-dots li {
+    display: inline-block;
+}
+
+.MainProduct .Main_Product_Slide .slick-dots li button {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 120px 0;
+}
+
+.MainProduct .Main_Product_Slide .slick-dots li.slick-active button {
+    background: #fff;
+}
+
+ /* .MainProduct .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.MainProduct .arrows i {
+    position: absolute;
+    top: 0;
+    transform: translate(0, -50%);
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}  */
+
+.MainProduct .arrows .left {
+    left: 0;
+}
+
+.MainProduct .arrows .right {
+    right: 0;
+}
+
+/* .MainHover {
+    background: #111;
+}
+
+.MainHover .title h2{
+    font-size: 40px;
+    font-weight: 900;
+    padding: 60px 0 30px 0;
+    text-align: center;
+    color: #ddd;
+}
+
+.MainHover .title p {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 0 60px 0;
+    color: #ddd;
+} */
+
+
+/* .MainHover .inner img {
+    vertical-align: middle;
+    max-width: 100%;
+} */
+
+/* .MainHover .inner {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+} */
+
+
+/* .MainHover .inner .itm {
+        position: relative;
+        flex: 1;
+        overflow: hidden;
+}
+
+.MainHover .title strong {
+    display: flex;
+    padding: 30px 0;
+} */
+
+ /* .MainHover .inner .itm .desc {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+
+    transition: 0.5s;
+    transform: translate(0, 100%);
+}  */
+
+/* .MainHover .itm:hover .desc {
+    transform: translate(0, 0);
+} */
+
+
+ /* .MainHover .itm .desc a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}  */
+
+/* .MainHover .inner .itm strong {
+    display: block;
+    text-align: center;
+    font-size: 32px;
+}
+
+.MainHover .inner .itm span {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+} */
+/* .MainProduct .icon {
+    display: flex;
+    padding: 8px;
+    background: #ddd;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 32px;
+    margin: 0 16px 0 0;
+
+} */
+
+.icon {
+     max-width: 1200px;
+    text-align: center;
+    padding: 0 15px;
+    display: flex; 
+    gap: 120px;
+    justify-content: center;
+    margin: 0 0 16px 0;
+}
+
+.icon .iconimg {
+    margin: 0 0 12px 0;
+}
+
+
+.Footer {
+    padding: 40px 0;
+    background: #1e1e1e;
+    color: #ddd;
+}
+
