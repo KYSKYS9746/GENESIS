@@ -1,3 +1,7 @@
+/* *{
+    outline: 1px solid tomato;
+} */
+
 
 .Header .inner{
     display: flex;
@@ -92,6 +96,7 @@
     color: #ddd;
 }
 
+
 .MainVisual .VisualSlide .itm {
     position: relative;
     height: 888px;
@@ -110,7 +115,7 @@
 
 .MainVisual .VisualSlide .itm01 {
     background: url(../images/MainViusal01.jpg) no-repeat center center/cover;
-}
+} 
 .MainVisual .VisualSlide .itm02 {
     background: url(../images/MainViusal02.jpg) no-repeat center center/cover;
 }
@@ -198,7 +203,7 @@
 
 .MainProduct {
     position: relative;
-    padding: 120px 0;
+    padding: 100px 0;
     background:rgb(12, 12, 12);
 
 }
@@ -251,7 +256,7 @@
     height: 20px;
     font-size: 10px;
     background: #333;
-    color: #fff;
+    color: #f9f9f9;
     border-radius: 50%;
     border: none;
     cursor: pointer;
@@ -444,6 +449,57 @@
     border: 3px solid #ddd;
 }
 
+.insta {
+    padding: 50px 0;
+}
+
+.insta .inner {
+    padding: 0 0 50px 0;
+    text-align: center;
+}
+.insta .inner p {
+    padding: 0 0 12px 0;
+    font-size: 12px;
+}
+.insta .inner h2 {
+padding: 12px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.insta .instaimg{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.insta .instaimg{
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+
+}
+
+.insta .instaimg figure {
+    flex:1;
+}
+
+
+.insta .instaimg figure img {
+
+    transition: 0.5s;
+}
+
+.insta .instaimg figure:hover img {
+    transform: scale(1.3);
+}
+
+
+.content{
+    margin: 0 0 40px 0;
+}
+
 .content .inner {
     padding: 32px 0;
     text-align: center;
@@ -468,17 +524,20 @@
     font-size: 12px;
 }
 
-.Footer {
-    padding: 120px 0;
-    background: #1e1e1e;
+.Footer{
+    padding: 120px 0 0 0;
     color: #ddd;
+    background: #1e1e1e;
 }
+
+
 
 .Footer .Footerff {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
     gap: 120px;
+    padding: 0 0 120px 0;
 
 }
 
@@ -489,14 +548,49 @@
 
 
 .Footerff li {
-    padding: 12px 0;
+    padding: 20px 0;
     font-size: 12px;
 }
 
-.Footer .inner .link {
+.Footerinner {
+    background: rgb(12, 12, 12);
+}
+
+.Footerinner .link {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    gap: 40px;
+    gap: 64px;
     padding: 40px 0;
+}
+
+.Footer .copy figure{
+    text-align: center;
+}
+
+.totop {
+    position: fixed;
+    bottom: 100px;
+    right: -100px;
+    background: transparent;
+    border: none;
+
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.totop.on {
+    right: 100px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.totop i {
+    padding: 16px;
+    background: #1e1e1e;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
 }
